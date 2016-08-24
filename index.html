@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="dist/css/main.css">
 	<title>Search</title>
 </head>
 <body>
 	<h1>Search</h1>
 
-	<form method="get">
-		<input id="search" class="search" type="text" name="searchValue" size="25" placeholder="Search" autocomplete="off" onkeyup="replaceWord(this.value)">
-		<input type="submit" value="Submit" onclick="buildContent()">
+	<form class="form" method="get">
+		<input id="search" class="form-search" type="text" name="searchValue" size="25" placeholder="Search" autocomplete="off" onkeyup="replaceWord(this.value)">
+		<input class="form-submit" type="submit" value="Submit" onclick="buildContent()">
 	</form>
 
 	<div id="result"></div>
 
 	<div id="content"></div>
 
-	<script src="main.js"></script>
+	<script src="dist/js/main.js"></script>
 </body>
 </html>

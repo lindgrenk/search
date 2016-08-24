@@ -25,6 +25,8 @@ function replaceWord(replace, inputField) {
 			createDiv.innerHTML = result[i];
 			createDiv.addEventListener("mouseover", fillInput);
 			createDiv.addEventListener("click", closeList);
+
+			// console.log(result[i]);
 		}
 	}else {
 		getDiv.innerHTML = '';
@@ -32,6 +34,8 @@ function replaceWord(replace, inputField) {
 }
 
 function fillInput() {
+	// console.log(this.innerHTML);
+
 	var selectedText = this.innerHTML;
 	document.getElementById("search").value = selectedText;
 }

@@ -1,0 +1,37 @@
+{
+	"less": {
+		"src": "src/less/main.less",
+		"dist": "dist/css",
+		"id": "main"
+	},
+	"js": {
+		"src": "src/js/main.js",
+		"dist": "dist/js",
+		"id": "main"
+	},
+	"svg": {
+		"src": "src/svg/**/*.svg",
+		"dist": "dist/svg",
+		"id": "main"
+	},
+	"server": {
+		"proxy": false,
+		"watch": [
+			{
+				"tasks": ["less-dev"],
+				"files": [
+					"src/less/**/*.less",
+					"*.html"
+				]
+			},
+			{
+				"tasks": ["svg"],
+				"files": "src/svg/**/*.svg"
+			},
+			{
+				"tasks": ["templates"],
+				"files": "src/templates/**/*.hbs"
+			}
+		]
+	}
+}
