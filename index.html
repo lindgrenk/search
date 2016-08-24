@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="">
+	<title>Search</title>
+</head>
+<body>
+	<h1>Search</h1>
+
+	<form method="get">
+		<input id="search" class="search" type="text" name="searchValue" size="25" placeholder="Search" autocomplete="off" onkeyup="replaceWord(this.value)">
+		<input type="submit" value="Submit" onclick="buildContent()">
+	</form>
+
+	<div id="result"></div>
+
+	<div id="content"></div>
+
+	<script src="main.js"></script>
+</body>
+</html>
