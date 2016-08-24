@@ -25,8 +25,6 @@ function replaceWord(replace, inputField) {
 			createDiv.innerHTML = result[i];
 			createDiv.addEventListener("mouseover", fillInput);
 			createDiv.addEventListener("click", closeList);
-
-			// console.log(result[i]);
 		}
 	}else {
 		getDiv.innerHTML = '';
@@ -34,8 +32,6 @@ function replaceWord(replace, inputField) {
 }
 
 function fillInput() {
-	// console.log(this.innerHTML);
-
 	var selectedText = this.innerHTML;
 	document.getElementById("search").value = selectedText;
 }
@@ -53,6 +49,10 @@ function buildContent() {
 	var inputField = document.getElementById('search').value;
 	var selectContent = document.getElementById('content');
 
-	selectContent.innerHTML = "<h2>" + inputField + "</h2>";
-	selectContent.innerHTML += "<p> Lorem ipsum dolor sit amet, velit dolore ei eum, an sit mazim iisque pertinacia. Vim accusam delicatissimi eu, id reque corpora vel. Mei ne omnesque posidonium. Illud menandri mel et. Integre ancillae assentior cu nam, no inani regione his. </p>"
+	if (inputField) {
+		selectContent.innerHTML = "<h2>" + inputField + "</h2>";
+		selectContent.innerHTML += "<p> Lorem ipsum dolor sit amet, velit dolore ei eum, an sit mazim iisque pertinacia. Vim accusam delicatissimi eu, id reque corpora vel. Mei ne omnesque posidonium. Illud menandri mel et. Integre ancillae assentior cu nam, no inani regione his. </p>"
+	} else {
+		selectContent.innerHTML = "<h2> You need to search for something</h2>";
+	}
 }
