@@ -1,16 +1,16 @@
 {
-  "name": "portfolio",
+  "name": "search",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lindgrenk/portfolio.git"
+    "url": "git+https://github.com/lindgrenk/search.git"
   },
   "author": "kristian lindgren",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lindgrenk/portfolio/issues"
+    "url": "https://github.com/lindgrenk/search/issues"
   },
-  "homepage": "https://github.com/lindgrenk/portfolio#readme",
+  "homepage": "https://github.com/lindgrenk/search#readme",
   "devDependencies": {
     "babelify": "^7.3.0",
     "browser-sync": "^2.14.0",
